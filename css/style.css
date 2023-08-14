@@ -9878,7 +9878,6 @@ textarea {
   background: -webkit-linear-gradient(right, #f82a7e 0%, #752a90 100%);
   background: -o-linear-gradient(right, #f82a7e 0%, #752a90 100%);
   background: linear-gradient(270deg, #f82a7e 0%, #752a90 100%);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .property-item.mb-30 {
