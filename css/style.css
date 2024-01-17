@@ -13,6 +13,21 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /*@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px; } }
+
+@media (min-width: 1200px)  {
+  .logo, img{
+    justify-content: center  ;
+
+  }
+
+}*/
+
+@media (min-width: 1400px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px; } }
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -6804,7 +6819,8 @@ textarea.form-control-lg {
   line-height: 2 !important; }
 
 .text-start {
-  text-align: left !important; }
+  text-align: left !important;
+}
 
 .text-end {
   text-align: right !important; }
@@ -9191,6 +9207,8 @@ textarea.form-control-lg {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.8) !important;
   font-weight: 500; }
+
+
   .logo:hover {
     color: gery !important; }
 
@@ -9208,12 +9226,16 @@ textarea.form-control-lg {
   .site-nav .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-nav .site-navigation .site-menu > li {
-      display: inline-block; }
+      display: flex;
+      justify-content: center;
+    }
       .site-nav .site-navigation .site-menu > li > a {
         color: white !important;
         font-size: 15px;
         padding: 10px 15px;
-        display: inline-block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
         text-decoration: none !important;
         color: rgba(255, 255, 255, 0.5); }
         .site-nav .site-navigation .site-menu > li > a:hover {
@@ -9390,7 +9412,7 @@ textarea.form-control-lg {
     .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo {
       float: left;
       margin-top: 10px;
-      margin-left: 0px; }
+      margin-left: 10px; }
       .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-logo a {
         display: inline-block;
         text-transform: uppercase; }
@@ -9615,7 +9637,12 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease;
   text-decoration: none; }
-
+  /*
+  img, .logo{
+    align-items: center;
+    margin-left: 170%;
+  }
+*/
 .form-control {
   font-size: 16px;
   height: 52px;
@@ -9921,7 +9948,7 @@ textarea {
       font-size: 13px; }
 
 .slider-nav {
-  margin-top: -100px;
+  margin-top: -10px;
   position: relative; }
   .slider-nav span {
     cursor: pointer;
