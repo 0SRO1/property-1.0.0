@@ -2540,17 +2540,18 @@ textarea.form-control-lg {
     opacity: 0.65; }
 
 .btn-primary {
+  text-shadow: 0 0 5px white;
   color: #fff;
-  background-color: #00204a;
-  border-color: #00204a; }
+  background-color: blue;
+  border-color: blue; }
   .btn-primary:hover {
     color: #fff;
     background-color: #001b3f;
     border-color: #001a3b; }
   .btn-check:focus + .btn-primary, .btn-primary:focus {
-    color: #fff;
-    background-color: #001b3f;
-    border-color: #001a3b;
+    color: blue;
+    background-color: blue;
+    border-color: blue;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 65, 101, 0.5);
     box-shadow: 0 0 0 0.25rem rgba(38, 65, 101, 0.5); }
   .btn-check:checked + .btn-primary,
@@ -9226,14 +9227,15 @@ textarea.form-control-lg {
   .site-nav .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-nav .site-navigation .site-menu > li {
-      display: flex;
-      justify-content: center;
+      display: inline-block;
     }
       .site-nav .site-navigation .site-menu > li > a {
+        margin: 0;
+        text-shadow: 0 0 5px blue;
         color: white !important;
         font-size: 15px;
         padding: 10px 15px;
-        display:flex;
+        display:inline-block;
         align-items: center;
         justify-content: center;
         text-decoration: none !important;
@@ -9821,7 +9823,8 @@ textarea {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   .btn.btn-primary {
-    background: #005555;
+    background: blue;
+    box-shadow: inset 0 0 5px white, 0 0 30px blue;
     color: #fff; }
   .btn:hover {
     top: -2px;
